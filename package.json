@@ -1,4 +1,12 @@
 {
   "name": "root",
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:universal-ember/docs-support.git"
+  },
+  "devDependencies": {
+    "release-plan": "^0.9.0"
+  },
+  "packageManager": "pnpm@9.12.3"
 }
