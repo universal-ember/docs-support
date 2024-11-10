@@ -52,7 +52,9 @@
     "change-case": "^5.4.4",
     "decorator-transforms": "^2.0.0",
     "ember-mobile-menu": "^5.1.0",
+    "ember-modifier": "^4.2.0",
     "ember-primitives": "^0.26.0",
+    "ember-resources": "^7.0.3",
     "kolay": "^2.0.2",
     "should-handle-link": "^1.2.2"
   },

@@ -1,50 +1,13 @@
-// @ts-expect-error - no types are provided for ember-mobile-menu
-import MenuWrapper from 'ember-mobile-menu/components/mobile-menu-wrapper';
+import { cell } from 'ember-resources';
+import { modifier } from 'ember-modifier';
+import { Page } from 'kolay/components';
 
+import { ResponsiveMenuLayout } from './menu-layout.gts';
+import { Link } from './links.gts';
 import { Article } from './article.gts';
+import { ThemeToggle } from './theme-toggle.gts';
 
 import type { TOC } from '@ember/component/template-only';
-import type { ComponentLike, WithBoundArgs } from '@glint/template';
-
-import { Page } from 'kolay/components';
-import { Link } from './links.gts';
-import { Menu } from './icons.gts';
-import { SideNav } from './side-nav.gts';
-
-const Toggle: TOC<{
-  Args: {
-    toggle: ComponentLike<{ Blocks: { default: [] } }>;
-  };
-}> = <template>
-  <@toggle>
-    <Menu class="w-6 h-6 stroke-slate-500" />
-  </@toggle>
-</template>;
-
-export const Layout: TOC<{
-  Blocks: {
-    content: [];
-    header: [toggle: WithBoundArgs<typeof Toggle, 'toggle'>];
-  };
-}> = <template>
-  <MenuWrapper as |mmw|>
-    <mmw.MobileMenu @mode="push" @maxWidth={{300}} as |mm|>
-      <SideNav @onClick={{mm.actions.close}} />
-    </mmw.MobileMenu>
-
-    <mmw.Content>
-      {{yield (component Toggle toggle=mmw.Toggle) to="header"}}
-
-      <div class="outer-content">
-        <SideNav />
-
-        <main class="relative grid justify-center flex-auto w-full mx-auto max-w-8xl">
-          {{yield to="content"}}
-        </main>
-      </div>
-    </mmw.Content>
-  </MenuWrapper>
-</template>;
 
 // Removes the App Shell / welcome UI
 // before initial rending and chunk loading finishes
@@ -57,17 +20,61 @@ function resetScroll(..._args: unknown[]) {
   document.querySelector('html')?.scrollTo(0, 0);
 }
 
+const isScrolled = cell(false);
+
+const onWindowScroll = modifier(() => {
+  function onScroll() {
+    isScrolled.current = window.scrollY > 0;
+  }
+
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  return () => {
+    window.removeEventListener('scroll', onScroll);
+  };
+});
+
 export const PageLayout: TOC<{
   Blocks: {
-    nav: [];
-    header: [];
+    logoLink: [];
+    topRight: [];
     editLink: [typeof EditLink];
     error: [error: string];
   };
 }> = <template>
-  <Layout>
-    <:nav>{{yield to="nav"}}</:nav>
-    <:header>{{yield to="header"}}</:header>
+  <ResponsiveMenuLayout>
+    <:header as |Toggle|>
+      <header
+        class="sticky top-0 z-50 transition duration-500 shadow-md shadow-slate-900/5 dark:shadow-none bg-white/95
+          {{if
+            isScrolled.current
+            'dark:bg-slate-900/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-900/75'
+            'dark:bg-slate-900/95'
+          }}"
+        {{onWindowScroll}}
+      >
+        <div class="outer-content flex flex-none flex-wrap items-center justify-between py-4">
+          <div class="flex mr-6 lg:hidden">
+            <Toggle />
+          </div>
+          <div class="relative flex items-center flex-grow basis-0">
+            <a href="/" aria-label="Home page">
+              {{yield to="logoLink"}}
+            </a>
+          </div>
+          {{!
+            If we ever have a search bar
+              <div class="mr-6 -my-5 sm:mr-8 md:mr-0">
+                  input here
+              </div>
+            }}
+          <TopRight>
+            {{yield to="topRight"}}
+          </TopRight>
+        </div>
+      </header>
+    </:header>
     <:content>
       <section data-main-scroll-container class="flex-auto max-w-2xl min-w-0 py-4 lg:max-w-none">
         <Article>
@@ -114,11 +121,18 @@ export const PageLayout: TOC<{
       </section>
     </:content>
 
-  </Layout>
+  </ResponsiveMenuLayout>
 </template>;
 
 const EditLink: TOC<{ Args: { href: string }; Blocks: { default: [] } }> = <template>
   <Link class="edit-page flex" href={{@href}}>
     {{yield}}
   </Link>
+</template>;
+
+export const TopRight: TOC<{ Blocks: { default: [] } }> = <template>
+  <div class="relative flex justify-end gap-6 basis-0 sm:gap-8 md:flex-grow">
+    <ThemeToggle />
+    {{yield}}
+  </div>
 </template>;

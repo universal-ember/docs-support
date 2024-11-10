@@ -6,5 +6,6 @@ export { Shell } from './shell.gts';
 export { IndexPage } from './index-page.gts';
 export { Link, InternalLink } from './links.gts';
 export { OopsError } from './errors.gts';
-export { Layout, PageLayout } from './layouts.gts';
+export { ResponsiveMenuLayout } from './menu-layout.gts';
+export { PageLayout, TopRight } from './page-layout.gts';
 export { ThemeToggle } from './theme-toggle.gts';
