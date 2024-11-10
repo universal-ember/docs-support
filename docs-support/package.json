@@ -14,7 +14,7 @@
       "default": "./dist/index.js"
     },
     "./*": {
-      "types": "./declarations/*.d.ts",
+      "types": "./declarations/*.gts.d.ts",
       "default": "./dist/*.js"
     },
     "./addon-main.js": "./addon-main.cjs"
