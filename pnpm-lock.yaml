@@ -23,6 +23,9 @@ importers:
       '@embroider/addon-shim':
         specifier: ^1.8.7
         version: 1.9.0
+      change-case:
+        specifier: ^5.4.4
+        version: 5.4.4
       decorator-transforms:
         specifier: ^2.0.0
         version: 2.3.0(@babel/core@7.26.0)
@@ -35,6 +38,9 @@ importers:
       kolay:
         specifier: ^2.0.2
         version: 2.0.2(@babel/core@7.26.0)(@glimmer/compiler@0.92.4)(@glimmer/syntax@0.92.3)(@glint/environment-ember-loose@1.4.1-unstable.34c4510(@glimmer/component@2.0.0)(@glint/template@1.4.1-unstable.34c4510)(ember-modifier@4.2.0(@babel/core@7.26.0)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.4.1-unstable.34c4510)(rsvp@4.8.5)(webpack@5.96.1))))(@glint/template@1.4.1-unstable.34c4510)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.4.1-unstable.34c4510)(rsvp@4.8.5)(webpack@5.96.1))(typescript@5.6.3)(webpack-sources@3.2.3)(webpack@5.96.1)
+      should-handle-link:
+        specifier: ^1.2.2
+        version: 1.2.2
     devDependencies:
       '@babel/core':
         specifier: ^7.24.4
@@ -48,6 +54,9 @@ importers:
       '@embroider/addon-dev':
         specifier: ^6.0.1
         version: 6.0.1(@glint/template@1.4.1-unstable.34c4510)(rollup@4.25.0)
+      '@glimmer/component':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@glint/core':
         specifier: unstable
         version: 1.4.1-unstable.34c4510(typescript@5.6.3)

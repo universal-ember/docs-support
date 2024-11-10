@@ -1,16 +1,15 @@
 // @ts-expect-error - no types are provided for ember-mobile-menu
 import MenuWrapper from 'ember-mobile-menu/components/mobile-menu-wrapper';
 
-import { hash } from '@ember/helper';
-
 import { Article } from './article.gts';
 
 import type { TOC } from '@ember/component/template-only';
-import type { ComponentLike } from '@glint/template';
+import type { ComponentLike, WithBoundArgs } from '@glint/template';
 
 import { Page } from 'kolay/components';
 import { Link } from './links.gts';
 import { Menu } from './icons.gts';
+import { SideNav } from './side-nav.gts';
 
 const Toggle: TOC<{
   Args: {
@@ -24,21 +23,20 @@ const Toggle: TOC<{
 
 export const Layout: TOC<{
   Blocks: {
-    nav: [options?: { close: () => void }];
     content: [];
-    header: [toggle: ComponentLike];
+    header: [toggle: WithBoundArgs<typeof Toggle, 'toggle'>];
   };
 }> = <template>
   <MenuWrapper as |mmw|>
     <mmw.MobileMenu @mode="push" @maxWidth={{300}} as |mm|>
-      {{yield (hash close=mm.actions.close) to="nav"}}
+      <SideNav @onClick={{mm.actions.close}} />
     </mmw.MobileMenu>
 
     <mmw.Content>
       {{yield (component Toggle toggle=mmw.Toggle) to="header"}}
 
       <div class="outer-content">
-        {{yield to="nav"}}
+        <SideNav />
 
         <main class="relative grid justify-center flex-auto w-full mx-auto max-w-8xl">
           {{yield to="content"}}
