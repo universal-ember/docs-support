@@ -14,5 +14,10 @@
     "concurrently": "^8.2.2",
     "release-plan": "^0.9.0"
   },
+  "pnpm": {
+    "overrides": {
+      "@glint/template": "1.4.1-unstable.34c4510"
+    }
+  },
   "packageManager": "pnpm@9.12.3"
 }
