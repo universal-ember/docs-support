@@ -15,7 +15,7 @@ export const InternalLink: TOC<{
   Element: HTMLAnchorElement;
   Blocks: { default: [] };
 }> = <template>
-  <a class={{linkClasses}} href='#' ...attributes>
+  <a class={{linkClasses}} href="#" ...attributes>
     {{yield}}
   </a>
 </template>;

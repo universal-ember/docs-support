@@ -10,6 +10,7 @@ import type { ComponentLike } from '@glint/template';
 
 import { Page } from 'kolay/components';
 import { Link } from './links.gts';
+import { Menu } from './icons.gts';
 
 const Toggle: TOC<{
   Args: {
@@ -17,7 +18,7 @@ const Toggle: TOC<{
   };
 }> = <template>
   <@toggle>
-    <Menu class='w-6 h-6 stroke-slate-500' />
+    <Menu class="w-6 h-6 stroke-slate-500" />
   </@toggle>
 </template>;
 
@@ -29,20 +30,18 @@ export const Layout: TOC<{
   };
 }> = <template>
   <MenuWrapper as |mmw|>
-    <mmw.MobileMenu @mode='push' @maxWidth={{300}} as |mm|>
-      {{yield (hash close=mm.actions.close) to='nav'}}
+    <mmw.MobileMenu @mode="push" @maxWidth={{300}} as |mm|>
+      {{yield (hash close=mm.actions.close) to="nav"}}
     </mmw.MobileMenu>
 
     <mmw.Content>
-      {{yield (component Toggle toggle=mmw.Toggle) to='header'}}
+      {{yield (component Toggle toggle=mmw.Toggle) to="header"}}
 
-      <div class='outer-content'>
-        {{yield to='nav'}}
+      <div class="outer-content">
+        {{yield to="nav"}}
 
-        <main
-          class='relative grid justify-center flex-auto w-full mx-auto max-w-8xl'
-        >
-          {{yield to='content'}}
+        <main class="relative grid justify-center flex-auto w-full mx-auto max-w-8xl">
+          {{yield to="content"}}
         </main>
       </div>
     </mmw.Content>
@@ -61,7 +60,6 @@ function resetScroll(..._args: unknown[]) {
 }
 
 export const PageLayout: TOC<{
-  Args: {};
   Blocks: {
     nav: [];
     header: [];
@@ -70,13 +68,10 @@ export const PageLayout: TOC<{
   };
 }> = <template>
   <Layout>
-    <:nav>{{yield to='nav'}}</:nav>
-    <:header>{{yield to='header'}}</:header>
+    <:nav>{{yield to="nav"}}</:nav>
+    <:header>{{yield to="header"}}</:header>
     <:content>
-      <section
-        data-main-scroll-container
-        class='flex-auto max-w-2xl min-w-0 py-4 lg:max-w-none'
-      >
+      <section data-main-scroll-container class="flex-auto max-w-2xl min-w-0 py-4 lg:max-w-none">
         <Article>
           <Page>
             {{! TODO: we need a pending state here
@@ -90,7 +85,7 @@ export const PageLayout: TOC<{
 
             <:error as |error|>
               <section>
-                {{yield error to='error'}}
+                {{yield error to="error"}}
               </section>
             </:error>
 
@@ -111,13 +106,11 @@ export const PageLayout: TOC<{
           </Page>
         </Article>
 
-        {{#if (has-block 'editLink')}}
+        {{#if (has-block "editLink")}}
 
-          <div
-            class='flex justify-end pt-6 mt-12 border-t border-slate-200 dark:border-slate-800'
-          >
+          <div class="flex justify-end pt-6 mt-12 border-t border-slate-200 dark:border-slate-800">
 
-            {{yield EditLink to='editLink'}}
+            {{yield EditLink to="editLink"}}
           </div>
         {{/if}}
       </section>
@@ -126,9 +119,8 @@ export const PageLayout: TOC<{
   </Layout>
 </template>;
 
-const EditLink: TOC<{ Args: { href: string }; Blocks: { default: [] } }> =
-  <template>
-    <Link class='edit-page flex' href={{@href}}>
-      {{yield}}
-    </Link>
-  </template>;
+const EditLink: TOC<{ Args: { href: string }; Blocks: { default: [] } }> = <template>
+  <Link class="edit-page flex" href={{@href}}>
+    {{yield}}
+  </Link>
+</template>;

@@ -35,9 +35,8 @@ const proseClasses = `
   dark:prose-code:text-slate-50
 `;
 
-export const Article: TOC<{ Element: HTMLElement; Blocks: { default: [] } }> =
-  <template>
-    <article class={{proseClasses}} ...attributes>
-      {{yield}}
-    </article>
-  </template>;
+export const Article: TOC<{ Element: HTMLElement; Blocks: { default: [] } }> = <template>
+  <article class={{proseClasses}} ...attributes>
+    {{yield}}
+  </article>
+</template>;
