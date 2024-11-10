@@ -52,7 +52,7 @@
     "decorator-transforms": "^2.0.0",
     "ember-mobile-menu": "^5.1.0",
     "ember-primitives": "^0.26.0",
-    "kolay": "^2.0.0"
+    "kolay": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
