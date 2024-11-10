@@ -10,7 +10,7 @@
   "author": "",
   "exports": {
     ".": {
-      "types": "./declarations/index.d.ts",
+      "types": "./declarations/index.gts.d.ts",
       "default": "./dist/index.js"
     },
     "./*": {
