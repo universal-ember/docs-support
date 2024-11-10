@@ -10,6 +10,7 @@
   "compilerOptions": {
     "allowJs": true,
     "declarationDir": "declarations",
+    "skipLibCheck": true,
     /**
       https://www.typescriptlang.org/tsconfig#noEmit
 

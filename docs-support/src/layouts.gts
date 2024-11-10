@@ -63,7 +63,7 @@ export const PageLayout: TOC<{
   Blocks: {
     nav: [];
     header: [];
-    editLink: [];
+    editLink: [typeof EditLink];
     error: [error: string];
   };
 }> = <template>
@@ -80,8 +80,8 @@ export const PageLayout: TOC<{
             }}
             {{! -- <:pending>
               <div class="h-full w-full"></div>
-            </:pending>
-        }}
+                </:pending>
+            }}
 
             <:error as |error|>
               <section>
