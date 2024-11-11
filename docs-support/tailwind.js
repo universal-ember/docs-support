@@ -2,7 +2,7 @@ import path from 'node:path';
 import { readPackageUp } from 'read-package-up';
 import { packageUp } from 'package-up';
 import { fontFamily } from 'tailwindcss/defaultTheme.js';
-import typography from 'tailwindcss/typography';
+import typography from '@tailwindcss/typography';
 
 /**
  * Thanks, past self
