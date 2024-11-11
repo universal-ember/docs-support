@@ -1,3 +1,5 @@
+import './theme-toggle.css';
+
 import { on } from '@ember/modifier';
 
 import { Switch } from 'ember-primitives';
