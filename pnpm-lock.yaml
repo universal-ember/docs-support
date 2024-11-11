@@ -23,6 +23,9 @@ importers:
       '@embroider/addon-shim':
         specifier: ^1.8.7
         version: 1.9.0
+      '@fontsource/lexend':
+        specifier: ^5.1.1
+        version: 5.1.1
       '@tailwindcss/typography':
         specifier: ^0.5.15
         version: 0.5.15(tailwindcss@3.4.14)
@@ -44,6 +47,9 @@ importers:
       ember-resources:
         specifier: ^7.0.3
         version: 7.0.3(@glimmer/component@2.0.0)(@glimmer/tracking@1.1.2)(@glint/template@1.4.1-unstable.34c4510)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.4.1-unstable.34c4510)(rsvp@4.8.5)(webpack@5.96.1))
+      inter-ui:
+        specifier: ^4.0.2
+        version: 4.0.2
       kolay:
         specifier: ^2.0.2
         version: 2.0.2(@babel/core@7.26.0)(@glimmer/compiler@0.92.4)(@glimmer/syntax@0.92.3)(@glint/environment-ember-loose@1.4.1-unstable.34c4510(@glimmer/component@2.0.0)(@glint/template@1.4.1-unstable.34c4510)(ember-modifier@4.2.0(@babel/core@7.26.0)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.4.1-unstable.34c4510)(rsvp@4.8.5)(webpack@5.96.1))))(@glint/template@1.4.1-unstable.34c4510)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.4.1-unstable.34c4510)(rsvp@4.8.5)(webpack@5.96.1))(typescript@5.6.3)(webpack-sources@3.2.3)(webpack@5.96.1)
@@ -822,6 +828,9 @@ packages:
 
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
+
+  '@fontsource/lexend@5.1.1':
+    resolution: {integrity: sha512-92A96vmx5xk1NgNphB62w5PKhW53Ruo74ki3UsUrV1q7/tbhJ73k2podhCNmldUlpUeO6rrCUWpRM20WloiNXA==}
 
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
@@ -3202,6 +3211,10 @@ packages:
   ini@4.1.3:
     resolution: {integrity: sha512-X7rqawQBvfdjS10YU1y1YVreA3SsLrW9dX2CewP2EbBJM4ypVNLDkO5y04gejPwKIY9lR+7r9gn3rFPt/kmWFg==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+
+  inter-ui@4.0.2:
+    resolution: {integrity: sha512-YmfzwEtzuVzEenQwSB/tmmqi/A0a2GnFk4mG4ZFULXiO5DNk0fJWiO3o9i1sdVKuMVGx9iiNQnCq8ghWZJVVHw==}
+    engines: {node: '>=16.0.0'}
 
   internal-slot@1.0.7:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
@@ -6304,6 +6317,8 @@ snapshots:
       '@floating-ui/utils': 0.2.8
 
   '@floating-ui/utils@0.2.8': {}
+
+  '@fontsource/lexend@5.1.1': {}
 
   '@gar/promisify@1.1.3': {}
 
@@ -9650,6 +9665,8 @@ snapshots:
   ini@1.3.8: {}
 
   ini@4.1.3: {}
+
+  inter-ui@4.0.2: {}
 
   internal-slot@1.0.7:
     dependencies:
