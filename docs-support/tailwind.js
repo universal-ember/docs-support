@@ -43,7 +43,7 @@ export async function config(root, { packages } = {}) {
     ...Object.keys(appPackageJson.dependencies)
       .map((depName) => {
         if (packages) {
-          if (packages.includes(depName)) {
+          if (!packages.includes(depName)) {
             return;
           }
         }
