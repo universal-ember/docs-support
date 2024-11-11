@@ -1,18 +1,20 @@
-'use strict';
+import path from 'node:path';
+import { readPackageUp } from 'read-package-up';
+import { packageUp } from 'package-up';
+import { fontFamily } from 'tailwindcss/defaultTheme';
+import typography from 'tailwindcss/typography';
 
 /**
  * Thanks, past self
  * https://github.com/CrowdStrike/ember-oss-docs/blob/main/ember-oss-docs/tailwind.cjs
  */
-const path = require('path');
-
-const { fontFamily } = require('tailwindcss/defaultTheme');
-
 const files = '**/*.{js,ts,hbs,gjs,gts,html}';
 const sourceEntries = '{app,src}';
 
-function config(root) {
-  const appRoot = path.join(root);
+export async function config(root) {
+  const appManifestPath = await packageUp(root);
+  const appPackageJson = await readPackageUp(root);
+  const appRoot = path.dirname(appManifestPath);
 
   const contentPaths = [
     `${appRoot}/${sourceEntries}/${files}`,
@@ -26,7 +28,7 @@ function config(root) {
      * (The risk here is scanning too many files and potentially
      *   running out of files watchers (tho, this isn't a problem on linux haha))
      */
-    ...Object.keys(packageJson.dependencies).map((depName) => {
+    ...Object.keys(appPackageJson.dependencies).map((depName) => {
       const packagePath = path.dirname(require.resolve(depName, { paths: [appRoot] }));
 
       return `${packagePath}/${files}`;
@@ -48,8 +50,6 @@ function config(root) {
         },
       },
     },
-    plugins: [require('@tailwindcss/typography')],
+    plugins: [typography],
   };
 }
-
-module.exports = { config };
