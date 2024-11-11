@@ -18,7 +18,7 @@ function isDark() {
 }
 
 export const ThemeToggle = <template>
-  <Switch id="site-theme-toggle" as |s|>
+  <Switch class="site-theme-toggle" as |s|>
     <s.Control name="color-scheme" checked={{(isDark)}} {{on "change" toggleTheme}} />
     <s.Label>
       <span class="sr-only">Toggle between light and dark mode</span>
