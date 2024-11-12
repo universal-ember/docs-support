@@ -1,6 +1,4 @@
 import 'ember-mobile-menu/themes/android';
-import 'inter-ui/inter-variable-latin.css';
-import '@fontsource/lexend';
 
 /**
  * NOTE: while this project uses tailwind,
