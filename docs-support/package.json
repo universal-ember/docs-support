@@ -14,7 +14,7 @@
       "default": "./dist/index.js"
     },
     "./tailwind": {
-      "import": "./tailwind.js"
+      "import": "./tailwind.mjs"
     },
     "./*": {
       "types": "./declarations/*.gts.d.ts",
