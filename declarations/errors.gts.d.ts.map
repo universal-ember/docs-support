@@ -1,0 +1,1 @@
+{"version":3,"file":"errors.gts.d.ts","sourceRoot":"","sources":["../src/errors.gts"],"names":[],"mappings":"AAmBA,OAAO,KAAK,EAAE,GAAG,EAAE,MAAM,gCAAgC,CAAC;AAE1D,eAAO,MAAM,SAAS,EAAE,GAAG,CAAC;IAC1B,IAAI,EAAE;QAAE,KAAK,EAAE,MAAM,CAAA;KAAE,CAAC;IACxB,MAAM,EAAE;QAAE,OAAO,EAAE,EAAE,CAAA;KAAE,CAAC;CACzB,CA4BC,CAAC"}
