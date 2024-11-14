@@ -1,11 +1,11 @@
-import path from 'node:path';
-import assert from 'node:assert';
-import { createRequire } from 'node:module';
+import path from "node:path";
+import assert from "node:assert";
+import { createRequire } from "node:module";
 
-import { readPackageUp } from 'read-package-up';
-import { packageUp } from 'package-up';
-import defaultTheme from 'tailwindcss/defaultTheme.js';
-import typography from '@tailwindcss/typography';
+import { readPackageUp } from "read-package-up";
+import { packageUp } from "package-up";
+import defaultTheme from "tailwindcss/defaultTheme.js";
+import typography from "@tailwindcss/typography";
 
 // tailwindcss is built incorrectly to allow named imports
 const fontFamily = defaultTheme.fontFamily;
@@ -16,8 +16,8 @@ const require = createRequire(import.meta.url);
  * Thanks, past self
  * https://github.com/CrowdStrike/ember-oss-docs/blob/main/ember-oss-docs/tailwind.cjs
  */
-const files = '**/*.{js,ts,hbs,gjs,gts,html}';
-const sourceEntries = '{app,src}';
+const files = "**/*.{js,ts,hbs,gjs,gts,html}";
+const sourceEntries = "{app,src}";
 
 export async function config(root, { packages } = {}) {
   const appManifestPath = await packageUp(root);
@@ -57,15 +57,15 @@ export async function config(root, { packages } = {}) {
   /** @type {import('tailwindcss').Config} */
   return {
     content: [...contentPaths],
-    darkMode: 'selector',
+    darkMode: "selector",
     theme: {
       extend: {
         maxWidth: {
-          '8xl': '88rem',
+          "8xl": "88rem",
         },
         fontFamily: {
-          sans: ['InterVariable', ...fontFamily.sans],
-          display: ['Lexend', { fontFeatureSettings: '"ss01"' }],
+          sans: ["InterVariable", ...fontFamily.sans],
+          display: ["Helvetica, Arial, sans-serif"],
         },
       },
     },
