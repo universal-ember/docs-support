@@ -2,8 +2,12 @@
 
 All docs' needs abstracted into one package for better sharing across the docs apps.
 
+## Dark Mode Toggle
 
-## Fonts 
+You will need `bg-white dark:bg-slate-900` on the `body` element's class.
+
+
+## Fonts (Optional) 
 
 Add to the HTML `<head>`:
 ```html 
