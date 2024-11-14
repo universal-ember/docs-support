@@ -31,7 +31,7 @@
   },
   "files": [
     "addon-main.cjs",
-    "tailwind.js",
+    "tailwind.mjs",
     "declarations",
     "dist"
   ],
