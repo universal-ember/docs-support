@@ -1,17 +1,8 @@
 {
   "solution": {
     "@universal-ember/docs-support": {
-      "impact": "minor",
-      "oldVersion": "0.1.0",
-      "newVersion": "0.2.0",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./docs-support/package.json"
+      "oldVersion": "0.2.0"
     }
   },
-  "description": "## Release (2024-11-14)\n\n@universal-ember/docs-support 0.2.0 (minor)\n\n#### :rocket: Enhancement\n* `@universal-ember/docs-support`\n  * [#20](https://github.com/universal-ember/docs-support/pull/20) Use smaller fonts ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "\n\n\n\n"
 }
