@@ -16,7 +16,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@glint/template": "1.4.1-unstable.34c4510"
+      "@glint/template": "1.5.0"
     }
   },
   "packageManager": "pnpm@9.12.3"
