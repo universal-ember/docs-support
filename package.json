@@ -16,7 +16,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@glint/template": "1.5.1"
+      "@glint/template": "1.5.2"
     }
   },
   "packageManager": "pnpm@9.15.4"
