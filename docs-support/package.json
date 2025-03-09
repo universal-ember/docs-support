@@ -62,7 +62,7 @@
     "ember-primitives": "^0.27.0",
     "ember-resources": "^7.0.3",
     "inter-ui": "^4.0.2",
-    "kolay": "^2.0.2",
+    "kolay": "^3.0.0",
     "package-up": "^5.0.0",
     "read-package-up": "^11.0.0",
     "should-handle-link": "^1.2.2",
