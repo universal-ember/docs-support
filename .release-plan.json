@@ -2,8 +2,8 @@
   "solution": {
     "@universal-ember/docs-support": {
       "impact": "minor",
-      "oldVersion": "0.4.0",
-      "newVersion": "0.5.0",
+      "oldVersion": "0.5.0",
+      "newVersion": "0.6.0",
       "constraints": [
         {
           "impact": "minor",
@@ -13,5 +13,5 @@
       "pkgJSONPath": "./docs-support/package.json"
     }
   },
-  "description": "## Release (2025-03-10)\n\n@universal-ember/docs-support 0.5.0 (minor)\n\n#### :rocket: Enhancement\n* `@universal-ember/docs-support`\n  * [#55](https://github.com/universal-ember/docs-support/pull/55) Update page-layout ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2025-03-10)\n\n@universal-ember/docs-support 0.6.0 (minor)\n\n#### :rocket: Enhancement\n* `@universal-ember/docs-support`\n  * [#57](https://github.com/universal-ember/docs-support/pull/57) Add more styles to the loading indicator ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
