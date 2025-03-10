@@ -2,6 +2,17 @@
 
 ## Release (2025-03-10)
 
+@universal-ember/docs-support 0.4.0 (minor)
+
+#### :rocket: Enhancement
+* `@universal-ember/docs-support`
+  * [#54](https://github.com/universal-ember/docs-support/pull/54) Revert tailwind upgrade ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2025-03-10)
+
 @universal-ember/docs-support 0.3.0 (minor)
 
 #### :rocket: Enhancement
