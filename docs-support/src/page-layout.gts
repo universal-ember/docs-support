@@ -79,14 +79,9 @@ export const PageLayout: TOC<{
       <section data-main-scroll-container class="flex-auto max-w-2xl min-w-0 py-4 lg:max-w-none">
         <Article>
           <Page>
-            {{! TODO: we need a pending state here
-                  right now this is ignored, because the :pending
-                  block doesn't exist.
-            }}
-            {{! -- <:pending>
+            <:pending>
               <div class="h-full w-full"></div>
-                </:pending>
-            }}
+            </:pending>
 
             <:error as |error|>
               <section>
