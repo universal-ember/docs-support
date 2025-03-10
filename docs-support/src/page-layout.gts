@@ -81,7 +81,7 @@ export const PageLayout: TOC<{
           <Page>
             <:pending>
               <div
-                class="fixed top-12 z-50 transition duration-500 shadow-md shadow-slate-900/5 dark:shadow-none bg-white/95 'dark:bg-slate-900/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-900/75'"
+                class="fixed top-12 p-4 rounded z-50 transition border border-slate-800 duration-500 shadow-xl shadow-slate-900/5 bg-white/95 'dark:bg-slate-900/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-900/75'"
               >
                 Loading, Compiling, etc
               </div>
