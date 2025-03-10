@@ -2,6 +2,17 @@
 
 ## Release (2025-03-10)
 
+@universal-ember/docs-support 0.6.0 (minor)
+
+#### :rocket: Enhancement
+* `@universal-ember/docs-support`
+  * [#57](https://github.com/universal-ember/docs-support/pull/57) Add more styles to the loading indicator ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2025-03-10)
+
 @universal-ember/docs-support 0.5.0 (minor)
 
 #### :rocket: Enhancement
