@@ -80,7 +80,11 @@ export const PageLayout: TOC<{
         <Article>
           <Page>
             <:pending>
-              <div class="h-full w-full"></div>
+              <div
+                class="fixed top-12 z-50 transition duration-500 shadow-md shadow-slate-900/5 dark:shadow-none bg-white/95 'dark:bg-slate-900/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-900/75'"
+              >
+                Loading, Compiling, etc
+              </div>
             </:pending>
 
             <:error as |error|>
