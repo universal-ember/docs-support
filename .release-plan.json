@@ -1,17 +1,8 @@
 {
   "solution": {
     "@universal-ember/docs-support": {
-      "impact": "patch",
-      "oldVersion": "0.6.0",
-      "newVersion": "0.6.1",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./docs-support/package.json"
+      "oldVersion": "0.6.1"
     }
   },
-  "description": "## Release (2025-03-20)\n\n@universal-ember/docs-support 0.6.1 (patch)\n\n#### :bug: Bug Fix\n* `@universal-ember/docs-support`\n  * [#62](https://github.com/universal-ember/docs-support/pull/62) Add .md files to tailwind jit search ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "\n\n\n\n"
 }
