@@ -16,8 +16,8 @@ const require = createRequire(import.meta.url);
  * Thanks, past self
  * https://github.com/CrowdStrike/ember-oss-docs/blob/main/ember-oss-docs/tailwind.cjs
  */
-const files = "**/*.{js,ts,hbs,gjs,gts,html}";
-const sourceEntries = "{app,src}";
+const files = "**/*.{js,ts,hbs,gjs,gts,html,md}";
+const sourceEntries = "{app,src,public}";
 
 export async function config(root, { packages } = {}) {
   const appManifestPath = await packageUp(root);
