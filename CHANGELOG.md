@@ -2,6 +2,17 @@
 
 ## Release (2025-05-10)
 
+* @universal-ember/docs-support 0.6.6 (patch)
+
+#### :bug: Bug Fix
+* `@universal-ember/docs-support`
+  * [#84](https://github.com/universal-ember/docs-support/pull/84) Fix sticky positioning ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2025-05-10)
+
 * @universal-ember/docs-support 0.6.5 (patch)
 
 #### :bug: Bug Fix
