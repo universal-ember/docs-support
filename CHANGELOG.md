@@ -2,6 +2,17 @@
 
 ## Release (2025-05-10)
 
+* @universal-ember/docs-support 0.6.5 (patch)
+
+#### :bug: Bug Fix
+* `@universal-ember/docs-support`
+  * [#82](https://github.com/universal-ember/docs-support/pull/82) Fix nav padding ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2025-05-10)
+
 * @universal-ember/docs-support 0.6.4 (patch)
 
 #### :bug: Bug Fix
