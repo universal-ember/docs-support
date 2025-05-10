@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-05-10)
+
+* @universal-ember/docs-support 0.6.4 (patch)
+
+#### :bug: Bug Fix
+* `@universal-ember/docs-support`
+  * [#80](https://github.com/universal-ember/docs-support/pull/80) Scrollable nav ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-05-07)
 
 * @universal-ember/docs-support 0.6.3 (patch)

@@ -2,8 +2,8 @@
   "solution": {
     "@universal-ember/docs-support": {
       "impact": "patch",
-      "oldVersion": "0.6.2",
-      "newVersion": "0.6.3",
+      "oldVersion": "0.6.3",
+      "newVersion": "0.6.4",
       "tagName": "latest",
       "constraints": [
         {
@@ -14,5 +14,5 @@
       "pkgJSONPath": "./docs-support/package.json"
     }
   },
-  "description": "## Release (2025-05-07)\n\n* @universal-ember/docs-support 0.6.3 (patch)\n\n#### :bug: Bug Fix\n* `@universal-ember/docs-support`\n  * [#78](https://github.com/universal-ember/docs-support/pull/78) Downgrade Tailwind to v3 ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2025-05-10)\n\n* @universal-ember/docs-support 0.6.4 (patch)\n\n#### :bug: Bug Fix\n* `@universal-ember/docs-support`\n  * [#80](https://github.com/universal-ember/docs-support/pull/80) Scrollable nav ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
