@@ -21,6 +21,8 @@
   .outer-content {
     max-width: 80rem;
     @apply sm:px-2 lg:px-8 xl:px-12;
+    display: grid;
+    gap: 0.5rem;
   }
   .mobile-menu-wrapper__content {
     .outer-content {
@@ -31,6 +33,8 @@
 
       aside {
         margin-top: 1.5rem;
+        overflow: auto;
+        max-height: 100dvh;
       }
     }
 
