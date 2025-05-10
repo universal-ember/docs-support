@@ -36,6 +36,8 @@
         overflow: auto;
         max-height: calc(100dvh - 80px);
         padding-bottom: 80px;
+        position: sticky;
+        top: 92px;
       }
     }
 
