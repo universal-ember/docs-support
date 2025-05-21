@@ -1,6 +1,7 @@
 import Component from '@glimmer/component';
 import { on } from '@ember/modifier';
 import { service } from '@ember/service';
+import type { RouterService } from '@ember/routing/router-service';
 
 import { sentenceCase } from 'change-case';
 import { link } from 'ember-primitives/helpers';
@@ -24,6 +25,17 @@ function fixWords(text: string) {
       return text;
   }
 }
+
+const joinUrl = (...strs: string[]) => {
+  let prefix = strs[0]?.startsWith('/') ? '/' : '';
+  return (
+    prefix +
+    strs
+      .map((s) => s.replace(/^\//, '').replace(/\/$/, ''))
+      .filter((x) => !!x)
+      .join('/')
+  );
+};
 
 /**
  * Converts 1-2-hyphenated-thing
@@ -112,6 +124,7 @@ export class SideNav extends Component<{
   };
 }> {
   @service('kolay/docs') declare docs: DocsService;
+  @service('router') declare router: RouterService;
 
   get humanSelected() {
     let path = this.docs.selected?.path;
@@ -119,6 +132,10 @@ export class SideNav extends Component<{
     if (!path) return undefined;
 
     return path.split('/').filter(Boolean).map(titleize).join(' / ');
+  }
+
+  get rootUrl() {
+    return this.router.rootURL;
   }
 
   closeNav = (event: Event) => {
@@ -144,7 +161,7 @@ export class SideNav extends Component<{
       <PageNav aria-label="Main Navigation">
         <:page as |x|>
           <SubSectionLink
-            @href={{x.page.path}}
+            @href={{joinUrl this.rootUrl x.page.path}}
             @name={{nameFor x.page}}
             {{on "click" this.closeNav}}
           />
@@ -153,7 +170,7 @@ export class SideNav extends Component<{
         <:collection as |x|>
           {{#if x.index}}
             <SectionLink
-              @href={{x.index.page.path}}
+              @href={{joinUrl this.rootUrl x.index.page.path}}
               @name={{titleize x.collection.name}}
               {{on "click" this.closeNav}}
             />
