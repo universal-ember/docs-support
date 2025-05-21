@@ -1,7 +1,7 @@
 import Component from '@glimmer/component';
 import { on } from '@ember/modifier';
 import { service } from '@ember/service';
-import type { RouterService } from '@ember/routing/router-service';
+import type RouterService from '@ember/routing/router-service';
 
 import { sentenceCase } from 'change-case';
 import { link } from 'ember-primitives/helpers';
