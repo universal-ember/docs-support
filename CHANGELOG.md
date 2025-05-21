@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-05-21)
+
+* @universal-ember/docs-support 0.6.7 (patch)
+
+#### :bug: Bug Fix
+* `@universal-ember/docs-support`
+  * [#90](https://github.com/universal-ember/docs-support/pull/90) fix for base url ([@patricklx](https://github.com/patricklx))
+
+#### Committers: 1
+- Patrick Pircher ([@patricklx](https://github.com/patricklx))
+
 ## Release (2025-05-10)
 
 * @universal-ember/docs-support 0.6.6 (patch)
