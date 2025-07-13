@@ -49,7 +49,7 @@ importers:
         version: 7.0.6(@glimmer/component@2.0.0)(@glint/template@1.5.2)
       inter-ui:
         specifier: ^4.0.2
-        version: 4.1.0
+        version: 4.1.1
       kolay:
         specifier: ^3.5.6
         version: 3.5.6(@babel/core@7.26.9)(@glimmer/compiler@0.92.4)(@glimmer/syntax@0.92.3)(@glimmer/tracking@1.1.2)(@glint/environment-ember-loose@2.0.1-unstable.f415a3e(@glimmer/component@2.0.0)(@glint/core@2.0.1-unstable.f415a3e(typescript@5.8.2))(@glint/template@1.5.2)(ember-modifier@4.2.0(@babel/core@7.26.9)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))))(@glint/template@1.5.2)(ember-source@5.12.0(@glimmer/component@2.0.0)(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))(typescript@5.8.2)(webpack@5.98.0)
@@ -1424,8 +1424,8 @@ packages:
   '@types/node@22.13.10':
     resolution: {integrity: sha512-I6LPUvlRH+O6VRUqYOcMudhaIdUVWfsjnZavnsraHvpBwaEyMN29ry+0UVJhImYL16xsscu0aske3yA+uPOWfw==}
 
-  '@types/node@24.0.10':
-    resolution: {integrity: sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA==}
+  '@types/node@24.0.13':
+    resolution: {integrity: sha512-Qm9OYVOFHFYg3wJoTSrz80hoec5Lia/dPp84do3X7dZvLikQvM1YpmvTBEdIr/e+U8HTkFjLHLnl78K/qjf+jQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -3260,8 +3260,8 @@ packages:
     resolution: {integrity: sha512-+N0ngpO3e7cRUWOJAS7qw0IZIVc6XPrW4MlFBdD066F2L4k1L6ker3hLqSq7iXxU5tgS4WGkIUElWn5vogAEnw==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  inter-ui@4.1.0:
-    resolution: {integrity: sha512-lUJ5YLtpj7jWsrhTbN5w32MLOqISGFGOTMRNn+IGhLrbt67z5yvmBRoqpLCWLVlJ+l7kqnH6su4meEqvLMfAAA==}
+  inter-ui@4.1.1:
+    resolution: {integrity: sha512-451h0J29HyOmA+JXgSi/6M12tL7ZCZ8arYKZUXiOXTJpJbAKqJvFh3k5SiV3x7tKe0C0KyrKUUiQIvvZ2PQDcA==}
     engines: {node: '>=16.0.0'}
 
   internal-slot@1.1.0:
@@ -7196,7 +7196,7 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  '@types/node@24.0.10':
+  '@types/node@24.0.13':
     dependencies:
       undici-types: 7.8.0
 
@@ -9832,7 +9832,7 @@ snapshots:
 
   ini@5.0.0: {}
 
-  inter-ui@4.1.0: {}
+  inter-ui@4.1.1: {}
 
   internal-slot@1.1.0:
     dependencies:
@@ -10018,7 +10018,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 24.0.10
+      '@types/node': 24.0.13
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
