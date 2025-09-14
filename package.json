@@ -19,5 +19,5 @@
       "@glint/template": "1.5.2"
     }
   },
-  "packageManager": "pnpm@10.14.0"
+  "packageManager": "pnpm@10.15.1"
 }
