@@ -2,8 +2,8 @@
   "solution": {
     "@universal-ember/docs-support": {
       "impact": "patch",
-      "oldVersion": "0.6.6",
-      "newVersion": "0.6.7",
+      "oldVersion": "0.6.7",
+      "newVersion": "0.6.8",
       "tagName": "latest",
       "constraints": [
         {
@@ -14,5 +14,5 @@
       "pkgJSONPath": "./docs-support/package.json"
     }
   },
-  "description": "## Release (2025-05-21)\n\n* @universal-ember/docs-support 0.6.7 (patch)\n\n#### :bug: Bug Fix\n* `@universal-ember/docs-support`\n  * [#90](https://github.com/universal-ember/docs-support/pull/90) fix for base url ([@patricklx](https://github.com/patricklx))\n\n#### Committers: 1\n- Patrick Pircher ([@patricklx](https://github.com/patricklx))\n"
+  "description": "## Release (2025-11-02)\n\n* @universal-ember/docs-support 0.6.8 (patch)\n\n#### :bug: Bug Fix\n* `@universal-ember/docs-support`\n  * [#118](https://github.com/universal-ember/docs-support/pull/118) Tabs are focusable ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }
