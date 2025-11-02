@@ -25,6 +25,7 @@ select,
 textarea,
 [role="switch"],
 [role="button"],
+[role="tab"],
 [tabindex] {
   &:focus,
   &:focus-visible {
