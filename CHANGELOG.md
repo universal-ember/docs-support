@@ -2,6 +2,17 @@
 
 ## Release (2025-11-02)
 
+* @universal-ember/docs-support 0.6.9 (patch)
+
+#### :bug: Bug Fix
+* `@universal-ember/docs-support`
+  * [#119](https://github.com/universal-ember/docs-support/pull/119) Selected tabs are focusable ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2025-11-02)
+
 * @universal-ember/docs-support 0.6.8 (patch)
 
 #### :bug: Bug Fix
