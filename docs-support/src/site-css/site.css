@@ -26,6 +26,7 @@ textarea,
 [role="switch"],
 [role="button"],
 [role="tab"],
+[role="tab"][aria-selected],
 [tabindex] {
   &:focus,
   &:focus-visible {
