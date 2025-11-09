@@ -1,18 +1,8 @@
 {
   "solution": {
     "@universal-ember/docs-support": {
-      "impact": "patch",
-      "oldVersion": "0.6.8",
-      "newVersion": "0.6.9",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        }
-      ],
-      "pkgJSONPath": "./docs-support/package.json"
+      "oldVersion": "0.6.9"
     }
   },
-  "description": "## Release (2025-11-02)\n\n* @universal-ember/docs-support 0.6.9 (patch)\n\n#### :bug: Bug Fix\n* `@universal-ember/docs-support`\n  * [#119](https://github.com/universal-ember/docs-support/pull/119) Selected tabs are focusable ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "\n\n\n\n"
 }
