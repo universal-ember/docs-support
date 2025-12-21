@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2025-12-01)
 
 * @universal-ember/docs-support 0.7.0 (minor)
