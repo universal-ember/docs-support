@@ -59,7 +59,7 @@
     "decorator-transforms": "^2.0.0",
     "ember-mobile-menu": "^6.0.0",
     "ember-modifier": "^4.2.0",
-    "ember-primitives": "^0.46.0",
+    "ember-primitives": "^0.48.0",
     "ember-resources": "^7.0.3",
     "inter-ui": "^4.0.2",
     "kolay": "^3.5.6",
