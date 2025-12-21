@@ -77,7 +77,7 @@
     "@glint/core": "unstable",
     "@glint/environment-ember-loose": "unstable",
     "@glint/environment-ember-template-imports": "unstable",
-    "@glint/template": "1.5.2",
+    "@glint/template": "1.7.3",
     "@rollup/plugin-babel": "^6.0.4",
     "@tsconfig/ember": "^3.0.6",
     "@typescript-eslint/eslint-plugin": "^8.13.0",
