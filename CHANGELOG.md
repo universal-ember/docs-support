@@ -2,6 +2,17 @@
 
 ## Release (2025-12-30)
 
+* @universal-ember/docs-support 0.8.1 (patch)
+
+#### :bug: Bug Fix
+* `@universal-ember/docs-support`
+  * [#135](https://github.com/universal-ember/docs-support/pull/135) Fix repl-sdk demo selector ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
+## Release (2025-12-30)
+
 * @universal-ember/docs-support 0.8.0 (minor)
 
 #### :rocket: Enhancement
