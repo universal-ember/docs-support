@@ -2,8 +2,8 @@
   "solution": {
     "@universal-ember/docs-support": {
       "impact": "minor",
-      "oldVersion": "0.6.9",
-      "newVersion": "0.7.0",
+      "oldVersion": "0.7.0",
+      "newVersion": "0.8.0",
       "tagName": "latest",
       "constraints": [
         {
@@ -14,5 +14,5 @@
       "pkgJSONPath": "./docs-support/package.json"
     }
   },
-  "description": "## Release (2025-12-01)\n\n* @universal-ember/docs-support 0.7.0 (minor)\n\n#### :rocket: Enhancement\n* `@universal-ember/docs-support`\n  * [#128](https://github.com/universal-ember/docs-support/pull/128) Update deps ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
+  "description": "## Release (2025-12-30)\n\n* @universal-ember/docs-support 0.8.0 (minor)\n\n#### :rocket: Enhancement\n* `@universal-ember/docs-support`\n  * [#134](https://github.com/universal-ember/docs-support/pull/134) Support repl-sdk ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### Committers: 1\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }

@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2025-12-30)
+
+* @universal-ember/docs-support 0.8.0 (minor)
+
+#### :rocket: Enhancement
+* `@universal-ember/docs-support`
+  * [#134](https://github.com/universal-ember/docs-support/pull/134) Support repl-sdk ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### Committers: 1
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2025-12-01)
 
 * @universal-ember/docs-support 0.7.0 (minor)
